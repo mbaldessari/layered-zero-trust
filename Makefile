@@ -18,7 +18,6 @@ install: operator-deploy post-install ## installs the pattern and loads the secr
 .PHONY: post-install
 post-install: ## Post-install tasks
 	make load-secrets
-	make vault-config-jwt
 	@echo "Done"
 
 .PHONY: test
